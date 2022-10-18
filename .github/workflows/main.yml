@@ -17,7 +17,7 @@
             run: zip -r deploy.zip . -x '*.git*'
      
           - name: Deploy to EB
-            uses: faissalelosman/docker-react
+            uses: DXWay/docker-react
             with:
               provider: elasticbeanstalk
               aws_access_key: ${{ secrets.AWS_ACCESS_KEY }}
